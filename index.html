@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChipSage Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage: #49E1C9;
+      --silver: #C7CCD6;
+      --charcoal: #1E1E1E;
+      --light-bg: #F9FBFC;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--light-bg);
+      color: var(--charcoal);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      color: var(--sage);
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #4A4A4A;
+      line-height: 1.7;
+    }
+
+    .divider {
+      margin: 2.5rem auto;
+      width: 120px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--silver), transparent);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    /* Subtle circuit lines */
+    .circuit-line {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid rgba(199, 204, 214, 0.4);
+      border-radius: 12px;
+      top: 15%;
+      left: 10%;
+      transform: rotate(45deg);
+    }
+
+    .circuit-line-2 {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgba(73, 225, 201, 0.15);
+      border-radius: 20px;
+      bottom: 10%;
+      right: 12%;
+      transform: rotate(15deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="circuit-line"></div>
+  <div class="circuit-line-2"></div>
+
+  <div class="container">
+    <h1>
+      Engineering <span class="highlight">Intelligent Silicon</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p>
+      ChipSage Labs is building next-generation AI systems 
+      for semiconductor design.
+      <br /><br />
+      We are rethinking how intelligence interacts with silicon.
+    </p>
+  </div>
+
+  <footer>
+    © 2026 ChipSage Labs
+  </footer>
+
+</body>
+</html>
+
